@@ -190,8 +190,14 @@ VRising_Server\BepInEx\plugins\
 Check:
 
 ```txt
-BepInEx/LogOutput.log
-```Dependencies
+BepInEx/LogOutput.log|
+
+```
+
+---
+
+Dependencies
 
     BepInEx
     VampireCommandFramework
+    ```
