@@ -1,0 +1,12 @@
+C:\Users\pinkk\Downloads\LevelRecipeGateClean-source\LevelRecipeGateClean\bin\Release\net6.0\LevelRecipeGate.deps.json
+C:\Users\pinkk\Downloads\LevelRecipeGateClean-source\LevelRecipeGateClean\bin\Release\net6.0\LevelRecipeGate.dll
+C:\Users\pinkk\Downloads\LevelRecipeGateClean-source\LevelRecipeGateClean\bin\Release\net6.0\LevelRecipeGate.pdb
+C:\Users\pinkk\Downloads\LevelRecipeGateClean-source\LevelRecipeGateClean\obj\Release\net6.0\LevelRecipeGate.csproj.AssemblyReference.cache
+C:\Users\pinkk\Downloads\LevelRecipeGateClean-source\LevelRecipeGateClean\obj\Release\net6.0\LevelRecipeGate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pinkk\Downloads\LevelRecipeGateClean-source\LevelRecipeGateClean\obj\Release\net6.0\LevelRecipeGate.AssemblyInfoInputs.cache
+C:\Users\pinkk\Downloads\LevelRecipeGateClean-source\LevelRecipeGateClean\obj\Release\net6.0\LevelRecipeGate.AssemblyInfo.cs
+C:\Users\pinkk\Downloads\LevelRecipeGateClean-source\LevelRecipeGateClean\obj\Release\net6.0\LevelRecipeGate.csproj.CoreCompileInputs.cache
+C:\Users\pinkk\Downloads\LevelRecipeGateClean-source\LevelRecipeGateClean\obj\Release\net6.0\LevelRecipeGate.dll
+C:\Users\pinkk\Downloads\LevelRecipeGateClean-source\LevelRecipeGateClean\obj\Release\net6.0\refint\LevelRecipeGate.dll
+C:\Users\pinkk\Downloads\LevelRecipeGateClean-source\LevelRecipeGateClean\obj\Release\net6.0\LevelRecipeGate.pdb
+C:\Users\pinkk\Downloads\LevelRecipeGateClean-source\LevelRecipeGateClean\obj\Release\net6.0\ref\LevelRecipeGate.dll
