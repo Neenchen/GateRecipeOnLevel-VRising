@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\pinkk\\Downloads\\LevelRecipeGateClean-source\\LevelRecipeGateClean\\LevelRecipeGate.csproj": {}
+    "C:\\Users\\pinkk\\Downloads\\LevelRecipeGateClean-source\\LevelRecipeGateClean\\LevelRecipeGate.csproj": {}
   },
   "projects": {
-    "c:\\Users\\pinkk\\Downloads\\LevelRecipeGateClean-source\\LevelRecipeGateClean\\LevelRecipeGate.csproj": {
+    "C:\\Users\\pinkk\\Downloads\\LevelRecipeGateClean-source\\LevelRecipeGateClean\\LevelRecipeGate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\pinkk\\Downloads\\LevelRecipeGateClean-source\\LevelRecipeGateClean\\LevelRecipeGate.csproj",
+        "projectUniqueName": "C:\\Users\\pinkk\\Downloads\\LevelRecipeGateClean-source\\LevelRecipeGateClean\\LevelRecipeGate.csproj",
         "projectName": "LevelRecipeGate",
-        "projectPath": "c:\\Users\\pinkk\\Downloads\\LevelRecipeGateClean-source\\LevelRecipeGateClean\\LevelRecipeGate.csproj",
+        "projectPath": "C:\\Users\\pinkk\\Downloads\\LevelRecipeGateClean-source\\LevelRecipeGateClean\\LevelRecipeGate.csproj",
         "packagesPath": "C:\\Users\\pinkk\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\pinkk\\Downloads\\LevelRecipeGateClean-source\\LevelRecipeGateClean\\obj\\",
+        "outputPath": "C:\\Users\\pinkk\\Downloads\\LevelRecipeGateClean-source\\LevelRecipeGateClean\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
