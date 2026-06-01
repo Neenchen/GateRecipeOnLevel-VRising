@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+
+    <AssemblyName>LevelRecipeGate</AssemblyName>
+    <RootNamespace>LevelRecipeGate</RootNamespace>
+    <OutputType>Library</OutputType>
+
+    <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <VRisingServerDir Condition="'$(VRisingServerDir)' == ''">$(MSBuildThisFileDirectory)..\VRisingServer</VRisingServerDir>
+    <BepInExDir Condition="'$(BepInExDir)' == ''">$(VRisingServerDir)\BepInEx</BepInExDir>
+    <InteropDir Condition="'$(InteropDir)' == ''">$(BepInExDir)\interop</InteropDir>
+    <PluginsDir Condition="'$(PluginsDir)' == ''">$(BepInExDir)\plugins</PluginsDir>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <NoVCF Condition="'$(NoVCF)' == ''">false</NoVCF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx.Core" HintPath="$(BepInExDir)\core\BepInEx.Core.dll" Private="false" />
+    <Reference Include="BepInEx.Unity.IL2CPP" HintPath="$(BepInExDir)\core\BepInEx.Unity.IL2CPP.dll" Private="false" />
+    <Reference Include="Il2CppInterop.Runtime" HintPath="$(BepInExDir)\core\Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="Il2Cppmscorlib" HintPath="$(InteropDir)\Il2Cppmscorlib.dll" Private="false" />
+
+    <Reference Include="0Harmony" HintPath="$(BepInExDir)\core\0Harmony.dll" Private="false" />
+
+    <Reference Include="ProjectM" HintPath="$(InteropDir)\ProjectM.dll" Private="false" />
+    <Reference Include="ProjectM.Shared" HintPath="$(InteropDir)\ProjectM.Shared.dll" Private="false" />
+    <Reference Include="ProjectM.CodeGeneration" HintPath="$(InteropDir)\ProjectM.CodeGeneration.dll" Private="false" />
+    <Reference Include="Stunlock.Core" HintPath="$(InteropDir)\Stunlock.Core.dll" Private="false" />
+    <Reference Include="Unity.Collections" HintPath="$(InteropDir)\Unity.Collections.dll" Private="false" />
+    <Reference Include="Unity.Entities" HintPath="$(InteropDir)\Unity.Entities.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(InteropDir)\UnityEngine.CoreModule.dll" Private="false" />
+
+    <Reference Include="VampireCommandFramework" HintPath="$(PluginsDir)\VampireCommandFramework.dll" Private="false" Condition="'$(NoVCF)' != 'true'" />
+  </ItemGroup>
+</Project>
