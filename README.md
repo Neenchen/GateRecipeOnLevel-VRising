@@ -191,29 +191,7 @@ Check:
 
 ```txt
 BepInEx/LogOutput.log
-```
+```Dependencies
 
-<<<<<<< HEAD
-That line tells us if:
-- the recipe GUID matched,
-- the player level was detected,
-- and the required level was found.
->>>>>>> cb39b31 (Please enter the commit message for your changes. Lines starting)
->>>>>>> a9b3f57 (Please enter the commit message for your changes. Lines starting)
-=======
-For entries such as:
-
-```txt
-[LevelRecipeGate] Craft check recipe=373339628, playerGearLevel=65, requiredLevel=74
-```
-
-These entries show:
-
-* Recipe GUID detected correctly
-* Player gear level detected correctly
-* Required recipe level loaded correctly
-* Whether the recipe was allowed or blocked
-
-```
-```
->>>>>>> 5e8c5d3 (Update README.md)
+    BepInEx
+    VampireCommandFramework
