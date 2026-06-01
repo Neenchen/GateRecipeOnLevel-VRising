@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # GateRecipeOnLevel
 The mod tracks the highest gear level a player has ever reached.
 =======
@@ -11,19 +12,99 @@ The mod tracks the highest gear level a player has ever reached.
 >>>>>>> b7d93f5 (Update README.md)
 # GateLevelRecipe
 =======
+=======
+>>>>>>> 5e8c5d3 (Update README.md)
 # LevelRecipeGate
 
-Clean V Rising server mod made from RecipeTweaker, simplified to one job:
+V Rising server mod originally based on RecipeTweaker, simplified to a single purpose:
 
-**Block crafting recipes until the player reaches the configured gear level.**
+**Block crafting recipes until players reach the required gear level.**
+
+## Credits
+
+* Original recipe blocking concept by **@Chimll**
+* Source code originally based on **RecipeTweaker**
+* Reworked and simplified into a progression-focused recipe gating system
+
+---
+
+## Features
+
+### Recipe Level Gating
+
+Lock any crafting recipe behind a required gear level.
+
+Examples:
+
+* Merciless Iron → Level 33
+* Reinforced Iron → Level 50
+* Dark Silver → Level 65
+* Sanguine → Level 74
+
+Players attempting to craft a locked recipe will have the craft cancelled automatically.
+
+---
+
+### Persistent Progression Tracking
+
+The mod tracks the **highest gear level a player has ever reached**.
+
+This means:
+
+* Reach Gear Level 91 once → permanently recorded.
+* Downgrade gear later → still considered Gear Level 91 for recipe unlocks.
+* Previously unlocked recipe tiers remain available.
+
+Highest player levels are stored in:
+
+```txt
+BepInEx/config/LevelRecipeGate/player_highest_levels.json
+```
+
+Example:
+
+```json
+{
+  "76561199042557118": {
+    "name": "Neen",
+    "steam_id": 76561199042557118,
+    "highest_gear_level": 91
+  }
+}
+```
+
+---
+
+### Crafting Feedback
+
+When a player attempts to craft a locked recipe:
+
+* Craft is blocked
+* Player receives a chat/system message
+* Server logs the attempt
+
+Example message:
+
+```txt
+You cannot craft this yet. This recipe unlocks at gear level 74. Your highest gear level is 65.
+```
+
+---
+
+## Removed From RecipeTweaker
 
 Removed from this clean version:
-- Drop blocking
-- Servant loot blocking
-- Scheduled unlocks
-- Global `blocked_recipes.txt`
 
-## Config
+* Drop blocking
+* Servant loot blocking
+* Scheduled unlocks
+* Global `blocked_recipes.txt`
+* Recipe unlock schedules
+* Drop restriction systems
+
+---
+
+## Configuration
 
 Generated at:
 
@@ -36,7 +117,7 @@ Example:
 ```json
 {
   "enabled": true,
-  "message": "You cannot craft this yet. Required gear level: {level}.",
+  "message": "You cannot craft this yet. This recipe unlocks at gear level {level}. Your highest gear level is {current}.",
   "recipe_level_blocks": [
     {
       "min_level": 33,
@@ -55,10 +136,15 @@ Example:
 }
 ```
 
-Supported placeholders in `message`:
-- `{level}` = required gear level
-- `{current}` = detected current player level, or `unknown`
-- `{recipe}` = recipe GUID
+### Supported Placeholders
+
+```txt
+{level}   = Required gear level
+{current} = Player's highest recorded gear level
+{recipe}  = Recipe GUID
+```
+
+---
 
 ## Commands
 
@@ -77,6 +163,20 @@ Examples:
 .levelrecipegate list
 .levelrecipegate reload
 ```
+
+---
+
+## How Gear Level Is Calculated
+
+Uses the same calculation used by V Rising:
+
+```txt
+ArmorLevel + SpellLevel + WeaponLevel
+```
+
+The highest value ever reached is saved and used for future recipe checks.
+
+---
 
 ## Build
 
@@ -98,17 +198,37 @@ Copy to:
 VRising_Server\BepInEx\plugins\
 ```
 
-## Important
+---
 
-If a player still can craft a blocked recipe, check `BepInEx/LogOutput.log` for:
+## Troubleshooting
+
+Check:
 
 ```txt
-[LevelRecipeGate] Craft check recipe=..., playerLevel=..., requiredLevel=...
+BepInEx/LogOutput.log
 ```
 
+<<<<<<< HEAD
 That line tells us if:
 - the recipe GUID matched,
 - the player level was detected,
 - and the required level was found.
 >>>>>>> cb39b31 (Please enter the commit message for your changes. Lines starting)
 >>>>>>> a9b3f57 (Please enter the commit message for your changes. Lines starting)
+=======
+For entries such as:
+
+```txt
+[LevelRecipeGate] Craft check recipe=373339628, playerGearLevel=65, requiredLevel=74
+```
+
+These entries show:
+
+* Recipe GUID detected correctly
+* Player gear level detected correctly
+* Required recipe level loaded correctly
+* Whether the recipe was allowed or blocked
+
+```
+```
+>>>>>>> 5e8c5d3 (Update README.md)
