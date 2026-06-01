@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LevelRecipeGate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4aa7981934d726e697cf84946317d9f8346a6e6e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b54b60d60aa1dd704bc1c5bc4a49bfb1d441f5d")]
 [assembly: System.Reflection.AssemblyProductAttribute("LevelRecipeGate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LevelRecipeGate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
