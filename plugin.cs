@@ -31,8 +31,7 @@ public override void Load()
 	ConfigStore.EnsureConfigsExist();
 	ConfigStore.LoadLevelRecipeBlocksFromDisk();
 
-	PlayerLevelService.Load();   // <-- ADD THIS
-
+	PlayerLevelService.Load();   
 	Harmony = new Harmony(Id);
 	Harmony.PatchAll(typeof(CraftingPatch));
 
