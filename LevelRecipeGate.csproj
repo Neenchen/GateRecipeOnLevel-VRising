@@ -3,7 +3,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
-
+ 
     <AssemblyName>LevelRecipeGate</AssemblyName>
     <RootNamespace>LevelRecipeGate</RootNamespace>
     <OutputType>Library</OutputType>
