@@ -157,18 +157,6 @@ The highest value ever reached is saved * its found BepInEx\config\LevelRecipeGa
 
 ## Build
 
-From the project folder:
-
-```powershell
-dotnet build -c Release -p:VRisingServerDir="G:\SteamLibrary\steamapps\common\VRising\VRising_Server"
-```
-
-Output:
-
-```txt
-bin\Release\net6.0\LevelRecipeGate.dll
-```
-
 Copy to:
 
 ```txt
