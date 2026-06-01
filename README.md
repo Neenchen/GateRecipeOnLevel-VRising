@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-# GateRecipeOnLevel
-The mod tracks the highest gear level a player has ever reached.
-=======
-# GateLevelRecipe
->>>>>>> 049dc7d (Initial commit)
-=======
-=======
->>>>>>> b7d93f5 (Update README.md)
-# GateLevelRecipe
-=======
-=======
->>>>>>> 5e8c5d3 (Update README.md)
+
 # LevelRecipeGate
 
 V Rising server mod originally based on RecipeTweaker, simplified to a single purpose:
@@ -67,7 +52,7 @@ Example:
 {
   "76561199042557118": {
     "name": "Neen",
-    "steam_id": 76561199042557118,
+    "steam_id": 1234567890123446,
     "highest_gear_level": 91
   }
 }
