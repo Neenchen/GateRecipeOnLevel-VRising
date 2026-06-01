@@ -121,14 +121,6 @@ Example:
 }
 ```
 
-### Supported Placeholders
-
-```txt
-{level}   = Required gear level
-{current} = Player's highest recorded gear level
-{recipe}  = Recipe GUID
-```
-
 ---
 
 ## Commands
@@ -159,7 +151,7 @@ Uses the same calculation used by V Rising:
 ArmorLevel + SpellLevel + WeaponLevel
 ```
 
-The highest value ever reached is saved and used for future recipe checks.
+The highest value ever reached is saved * its found BepInEx\config\LevelRecipeGate\player_highest_level *  and used for future recipe checks.
 
 ---
 
